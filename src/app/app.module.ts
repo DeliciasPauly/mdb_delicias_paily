@@ -14,6 +14,11 @@ import { CakesComponent } from './modules/front-page/cakes/cakes.component';
 import { CoffeesComponent } from './modules/front-page/coffees/coffees.component';
 import { LunchesComponent } from './modules/front-page/lunches/lunches.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule  } from 'angularfire2/firestore';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent    
@@ -23,7 +28,10 @@ import { LunchesComponent } from './modules/front-page/lunches/lunches.component
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
-    FrontPageModule
+    FrontPageModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig), 
+    AngularFireDatabaseModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent,CarouselComponent,ProductsComponent,LunchesComponent,ContactComponent],
