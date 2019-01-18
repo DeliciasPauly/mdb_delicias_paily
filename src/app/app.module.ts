@@ -13,15 +13,18 @@ import { ProductsComponent } from './modules/front-page/products/products.compon
 import { CakesComponent } from './modules/front-page/cakes/cakes.component';
 import { CoffeesComponent } from './modules/front-page/coffees/coffees.component';
 import { LunchesComponent } from './modules/front-page/lunches/lunches.component';
+import { MenuComponent } from './modules/front-page/menu/menu.component';
+import { GalleryComponent } from './modules/front-page/gallery/gallery.component';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule  } from 'angularfire2/firestore';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 
+
 @NgModule({
   declarations: [
-    AppComponent    
+    AppComponent 
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,7 @@ import { environment } from '../environments/environment';
     AngularFirestoreModule
   ],
   providers: [],
-  bootstrap: [AppComponent,CarouselComponent,ProductsComponent,LunchesComponent,ContactComponent],
+  bootstrap: [AppComponent,CarouselComponent,ProductsComponent,MenuComponent,LunchesComponent,GalleryComponent,ContactComponent],
   schemas: [ NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

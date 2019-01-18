@@ -9,9 +9,11 @@ import { ProductsComponent } from './products/products.component';
 import { CakesComponent } from './cakes/cakes.component';
 import { LunchesComponent } from './lunches/lunches.component';
 import { CoffeesComponent } from './coffees/coffees.component';
+import { MenuComponent } from './menu/menu.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
-  declarations: [CarouselComponent, PricesComponent, ContactComponent, ProductsComponent, CakesComponent, LunchesComponent, CoffeesComponent],
+  declarations: [CarouselComponent, PricesComponent, ContactComponent, ProductsComponent, CakesComponent, LunchesComponent, CoffeesComponent, MenuComponent, GalleryComponent],
   imports: [
     CommonModule,        
     MDBBootstrapModule
